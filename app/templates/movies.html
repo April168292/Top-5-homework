@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+
+
+{% block content %}
+    <h1>This is the movies page!</h1>
+    <ul>
+        {% for name in top_movies %}
+        <li>{{ name }}</li>
+        {% endfor %}
+    </ul>
+
+
+
+{% endblock content %}
